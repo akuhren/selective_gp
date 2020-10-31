@@ -7,7 +7,7 @@ The motivating problem of this paper is that of deciding how many inducing point
 
 We present a probabilistic approach towards tackling this problem in which each inducing points is associated with a probability of inclusion that is set by the model. Meanwhile, the model is penalised for the total amount of probability assigned and so must choose to include only those points that best explain the observed data.
 
-[![1D regression](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d_distribution.gif "1D regression")](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d_distribution.gif "1D regression")
+[![1D regression](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d.gif "1D regression")](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d.gif "1D regression")
 
 This is achieved by expanding the hierarchical model with a point process prior over inducing inputs that favours smaller sets of points. To accomodate this expansion, we also introduce a variational point process that assigns probabilities to individual points. The KL divergence between these two point processes is closed-form computable, and so the new expected likelihood can be optimised straightforwardly through score function estimatinon.
 
