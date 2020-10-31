@@ -1,5 +1,3 @@
-# Probabilistic Selection of Inducing Points in Sparse Gaussian Processes
-
 Code accompanying the paper [Probabilistic Selection of Inducing Points in Sparse Gaussian Processes](https://arxiv.org/abs/2010.09370v2 "Prob") by Uhrenholt, Charvet, and Jensen, 2020.
 
 ## Paper synopsis
@@ -9,7 +7,7 @@ We present a probabilistic approach towards tackling this problem in which each 
 
 [![1D regression](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d.gif "1D regression")](https://github.com/akuhren/selective_gp/blob/master/img/reg_1d.gif "1D regression")
 
-This is achieved by expanding the hierarchical model with a point process prior over inducing inputs that favours smaller sets of points. To accomodate this expansion, we also introduce a variational point process that assigns probabilities to individual points. The KL divergence between these two point processes is closed-form computable, and so the new expected likelihood can be optimised straightforwardly through score function estimatinon.
+This is achieved by expanding the hierarchical model with a point process prior over inducing inputs that favours smaller sets of points. To accomodate this expansion, we also introduce a variational point process that assigns probabilities to individual points. The KL divergence between these two point processes is closed-form computable, and so the new expected likelihood can be optimised straightforwardly through score function estimation.
 
 The new model is agnostic to number of input/output dimensions and is readily applicable for regression, classification, latent variable modelling, and even deep Gaussian processes:
 
