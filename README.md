@@ -1,4 +1,4 @@
-# Probabilistic Selection of Induincg Points in Sparse Gaussian Processes
+# Probabilistic Selection of Inducing Points in Sparse Gaussian Processes
 
 Code accompanying the paper [Probabilistic Selection of Inducing Points in Sparse Gaussian Processes](https://arxiv.org/abs/2010.09370v2 "Prob") by Uhrenholt, Charvet, and Jensen, 2020.
 
