@@ -1,0 +1,1 @@
+from .collapsed_strategy import CollapsedStrategy
