@@ -11,9 +11,11 @@ We present a probabilistic approach towards tackling this problem in which each 
 
 This is achieved by expanding the hierarchical model with a point process prior over inducing inputs that favours smaller sets of points. To accomodate this expansion, we also introduce a variational point process that assigns probabilities to individual points. The KL divergence between these two point processes is closed-form computable, and so the new expected likelihood can be optimised straightforwardly through score function estimatinon.
 
-The new model is agnostic to number of input/output dimensions and is readily applicable for regression, classification, latent variable modelling, and even deep Gaussian processes.
+The new model is agnostic to number of input/output dimensions and is readily applicable for regression, classification, latent variable modelling, and even deep Gaussian processes:
 
 [![DGP regression](https://github.com/akuhren/selective_gp/blob/master/img/reg_dgp.gif "DGP regression")](https://github.com/akuhren/selective_gp/blob/master/img/reg_dgp.gif "DGP regression")
+
+In the above example, note that the learnt functions in layer 2 and 3 are less complex than in layer 1. Consequently, the model can prune away more points in those layers without significant deterioration to the final posterior.
 
 ## Installation
 The code is developed and tested for Python 3.7.
