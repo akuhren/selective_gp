@@ -1,4 +1,4 @@
-Code accompanying the paper [Probabilistic Selection of Inducing Points in Sparse Gaussian Processes](https://arxiv.org/abs/2010.09370v2 "Prob") by Uhrenholt, Charvet, and Jensen, 2020.
+Code accompanying the paper [Probabilistic Selection of Inducing Points in Sparse Gaussian Processes](https://arxiv.org/abs/2010.09370) by Uhrenholt, Charvet, and Jensen, 2020.
 
 ## Paper synopsis
 The motivating problem of this paper is that of deciding how many inducing points to rely on when fitting a sparse Gaussian process. This is ultimately a trade-off between model complexity and capacity, and the appropriate number of inducing points depends on the available computing power and the required fidelity of the model predictions. While gridsearch over the number of points is certainly possible, it will for large ranges be very time-consuming, especially in the context of deep Gaussian processes where different layers may have different fidelities and thus require different number of inducing points for an optimal trade-off.
@@ -46,7 +46,7 @@ Experiments are run through [MLFlow](https://mlflow.org/). By default, all resul
 
 ## Citation
 ```
-@misc{uhrenholt2020probabilisti
+@misc{uhrenholt2020probabilistic,
       title={Probabilistic selection of inducing points in sparse Gaussian processes}, 
       author={Anders Kirk Uhrenholt and Valentin Charvet and Bj{o}rn Sand Jensen},
       year={2020},
