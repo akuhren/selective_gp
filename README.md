@@ -15,6 +15,12 @@ The new model is agnostic to number of input/output dimensions and is readily ap
 
 In the above example, note that the learnt functions in layer 2 and 3 are less complex than in layer 1. Consequently, the model can prune away more points in those layers without significant deterioration to the final posterior.
 
+Finally, we can also learn the point process jointly along with the remaining model parameters. This is illustrated below in the context of Gaussian process Latent Variable Modelling (GP-LVM) where we learn a low-dimensional representation along with the function. In this example we use a single-cell gene expression dataset where each observation has 48 dimensions (qPCR values) in the original space.
+
+[![GPLVM](https://github.com/akuhren/selective_gp/blob/master/img/gplvm.gif "GPLVM")](https://github.com/akuhren/selective_gp/blob/master/img/gplvm.gif "GPLVM")
+
+Squares are observed embeddings in the latent space, coloured according to cell-stage (not known by the model). Circles are inducing inputs which are filled according to the probability of inclusion. Note that even though we initialise with a fairly high number of inducing points, the model only ever relies on a small, informative subset.
+
 ## Installation
 The code is developed and tested for Python 3.7.
 
